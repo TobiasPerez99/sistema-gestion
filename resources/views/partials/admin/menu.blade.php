@@ -783,21 +783,21 @@
 
 
 
-                        <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'support')?'active':''}}">
+                        {{-- <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'support')?'active':''}}">
                             <a href="{{route('support.index')}}" class="dash-link">
                                 <span class="dash-micon"><i class="ti ti-headphones"></i></span><span class="dash-mtext">{{__('Support System')}}</span>
                             </a>
-                        </li>
-                            <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'zoom-meeting' || Request::segment(1) == 'zoom-meeting-calender')?'active':''}}">
+                        </li> --}}
+                            {{-- <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'zoom-meeting' || Request::segment(1) == 'zoom-meeting-calender')?'active':''}}">
                                 <a href="{{route('zoom-meeting.index')}}" class="dash-link">
                                     <span class="dash-micon"><i class="ti ti-user-check"></i></span><span class="dash-mtext">{{__('Zoom Meeting')}}</span>
                                 </a>
-                        </li>
-                        <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'chats')?'active':''}}">
+                        </li> --}}
+                        {{-- <li class="dash-item dash-hasmenu {{ (Request::segment(1) == 'chats')?'active':''}}">
                             <a href="{{ url('chats') }}" class="dash-link">
                                 <span class="dash-micon"><i class="ti ti-message-circle"></i></span><span class="dash-mtext">{{__('Messenger')}}</span>
                             </a>
-                        </li>
+                        </li> --}}
                         @if(\Auth::user()->type =='company')
 
                             <li class="dash-item dash-hasmenu {{ Request::segment(1) == 'email_template' || Request::route()->getName() == 'manage.email.language' ? ' active dash-trigger' : 'collapsed' }}">
